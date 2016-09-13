@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>  
+    <link href='https://fonts.googleapis.com/css?family=Martel:400,700,600' rel='stylesheet' type='text/css'/>
+    <!-- font-family: 'Monda', sans-serif;    font-family: 'Arvo', serif; --> 
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title>Courses page</title>
+    <style>
+    .mega-menu { display:none;}
+	.hide{display:none!important}.show{display:block!important}
+	.mega-menu-small>ul>li>a,.mega-menu>ul>li>a,.vertical-menu-list ul>li>a{display:block;text-decoration:none;text-transform:capitalize;font-size:12px}header .bottom-header-menu>ul>li:nth-child(7)>a{margin-right:10px}#horizontal-menu>ul>li:hover .mega-menu,#horizontal-menu>ul>li:hover>.mega-menu-small{opacity:1;visibility:visible;margin-top:0;z-index:9999}#horizontal-menu>ul>li:nth-child(1) .mega-menu{left:-130px}#horizontal-menu>ul>li:nth-child(2) .mega-menu{left:-100px}#horizontal-menu>ul>li:nth-child(3) .mega-menu{left:-340px}#horizontal-menu>ul>li:nth-child(4) .mega-menu{left:-450px}#horizontal-menu>ul>li:nth-child(5) .mega-menu-small,#horizontal-menu>ul>li:nth-child(6) .mega-menu-small{left:-16px}#horizontal-menu>ul>li:nth-child(7) .mega-menu{left:-520px}.mega-menu,.mega-menu-small{position:absolute;top:70px;width:630px;background-color:#fafafa;opacity:0;visibility:hidden;overflow:hidden;z-index:99;border-radius:0 0 6px 6px;-webkit-border-radius:0 0 6px 6px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc}.mega-menu>.vertical-menu-list>ul,header #slidemenu{overflow-y:scroll}.mega-menu-small{width:230px}.vertical-menu-list .col-6:first-child{border-right:1px solid #f2f2f2}.col-6{width:49%;float:left;min-height:196px}#horizontal-menu>ul>li>.mega-menu,#horizontal-menu>ul>li>.mega-menu-small{transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out}.mega-menu-small>ul>li,.mega-menu>ul>li{list-style-type:none;display:block;margin:auto;border-bottom:1px solid #ebebeb;position:relative;border-right:0}.mega-menu-small>ul>li:last-child,.mega-menu>ul>li:last-child{border-bottom:0 none}.mega-menu>ul>li.selected{z-index:10;position:relative}.mega-menu-small>ul>li>a:hover,.mega-menu>ul>li.selected a{color:#e64143}.mega-menu-small>ul,.mega-menu>ul{background-color:#fafafa!important;float:left;width:230px;text-align:left;display:block;margin:auto 0;padding:0;position:relative}.mega-menu-small>ul>li>a,.mega-menu>ul>li>a{color:#666;padding:7px 15px}.mega-menu>.vertical-menu-list{background-color:#fff;margin-left:230px;min-height:200px;z-index:9;position:relative}.mega-menu>.vertical-menu-list .btm-link{position:absolute;bottom:0;right:0;background-color:#fff;left:0;padding:10px 20px;text-align:right}.mega-menu>.vertical-menu-list .btm-link .btn{padding:4px 8px;font-size:12px}#horizontal-menu>ul>li:nth-child(3) .mega-menu>.vertical-menu-list>ul{height:250px}#horizontal-menu>ul>li:nth-child(7) .mega-menu>.vertical-menu-list>ul{height:310px}.mega-menu>.vertical-menu-list>ul::-webkit-scrollbar{width:7px}.mega-menu>.vertical-menu-list>ul::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);-webkit-border-radius:5px;border-radius:5px}.mega-menu>.vertical-menu-list>ul::-webkit-scrollbar-thumb{-webkit-border-radius:5px;border-radius:5px;background:#e64143}.mega-menu>.vertical-menu-list>ul::-webkit-scrollbar-thumb:window-inactive{background:rgba(255,0,0,.4)}.vertical-menu-list ul>li>a{padding:5px 0;color:#333;border-bottom:1px solid #ebebeb;text-overflow:ellipsis;white-space:nowrap;overflow:hidden!important;width:100%}.vertical-menu-list ul>li:last-child>a{border-bottom:0 none}li:nth-child(1) .mega-menu>.vertical-menu-list ul>li>a:hover{color:#8882a8}li:nth-child(2) .mega-menu>.vertical-menu-list ul>li>a:hover{color:#52ca8d}li:nth-child(3) .mega-menu>.vertical-menu-list ul>li>a:hover{color:#3cc0cf}
+    </style>
+</head>
+<body>
+ <header class="header"> 
+    <div class="container">
+    	<div class="row">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+            
+            <!-- Menus -->
+            <nav id="bs-navbar" class="collapse navbar-collapse"> 
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><i class="icon-sun"></i> Courses</a>
+                        <div class="mega-menu">
+                             <ul class="vertical-menu">
+                                 <li class="selected"><a href="javascript:void(0);" rel="nofollow">Agile Management></i></a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Information Technology</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Project Management</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Big Data and Hadoop</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Business Management</a></li>                        
+                             </ul>
+                            <div class="vertical-menu-list  clearfix hide show"><ul><li class="selected"><a href="#">Agile and Scrum</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">ITIL® Foundation Certification</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Change Management Training</a></li><li><a href="#">Microsoft® Project 2013</a></li><li><a href="#">PMP® Certification</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Big Data and Hadoop </a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Business Analysis 101</a></li><li><a href="#">Business Case Writing</a></li><li><a href="#">CBAP® Certification</a></li><li><a href="#">PMI-PBA® Certification</a></li></ul></div>                    
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="icon-sun"></i> Agile Services</a>
+                        <div class="mega-menu">
+                             <ul class="vertical-menu">
+                                 <li class="selected"><a href="javascript:void(0);" rel="nofollow">Agile Management></i></a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Information Technology</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Project Management</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Big Data and Hadoop</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Business Management</a></li>                        
+                             </ul>
+                            <div class="vertical-menu-list  clearfix hide show"><ul><li class="selected"><a href="#">Agile and Scrum</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">ITIL® Foundation Certification</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Change Management Training</a></li><li><a href="#">Microsoft® Project 2013</a></li><li><a href="#">PMP® Certification</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Big Data and Hadoop </a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Business Analysis 101</a></li><li><a href="#">Business Case Writing</a></li><li><a href="#">CBAP® Certification</a></li><li><a href="#">PMI-PBA® Certification</a></li></ul></div>                    
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="icon-sun"></i> Corporate</a>
+                        <div class="mega-menu">
+                             <ul class="vertical-menu">
+                                 <li class="selected"><a href="javascript:void(0);" rel="nofollow">Agile Management></i></a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Information Technology</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Project Management</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Big Data and Hadoop</a></li>
+                                 <li><a href="javascript:void(0);" rel="nofollow">Business Management</a></li>                        
+                             </ul>
+                            <div class="vertical-menu-list  clearfix hide show"><ul><li class="selected"><a href="#">Agile and Scrum</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">ITIL® Foundation Certification</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Change Management Training</a></li><li><a href="#">Microsoft® Project 2013</a></li><li><a href="#">PMP® Certification</a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Big Data and Hadoop </a></li></ul></div>
+                            <div class="vertical-menu-list hide clearfix"><ul><li class="selected"><a href="#">Business Analysis 101</a></li><li><a href="#">Business Case Writing</a></li><li><a href="#">CBAP® Certification</a></li><li><a href="#">PMI-PBA® Certification</a></li></ul></div>                    
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="icon-sun"></i> Partner With Us</a></li>
+                    <li class="last-child"><a href="#"><i class="icon-signin"></i> Login / Register</a></li>
+                </ul>
+            </nav>
+          </div>
+    </div>
+ </header>
+ <!-- Breadcrums -->
+ 
+ 
+<!-- Load jQuery -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="js/scripts.js"></script>-->
+<script>
+$(document).ready(function(){
+	$(".mega-menu > ul > li").mouseover(function(){$(this).parent("ul").find("li").removeClass("selected"),$(this).addClass("selected");var e=$(this).index();$(this).parent().parent(".mega-menu").find(".vertical-menu-list").addClass("hide"),$(this).parent().parent(".mega-menu").find(".vertical-menu-list").removeClass("show"),$(this).parent().parent(".mega-menu").find(".vertical-menu-list").eq(e).removeClass("hide"),$(this).parent().parent(".mega-menu").find(".vertical-menu-list").eq(e).addClass("show")}),$("#horizontal-menu .nav > li").mouseleave(function(){$(this).find(".mega-menu ul > li").removeClass("selected"),$(this).find(".mega-menu ul > li:first-child").addClass("selected"),$(this).find(".mega-menu .vertical-menu-list").removeClass("show"),$(this).find(".mega-menu .vertical-menu-list").addClass("hide"),$(this).find(".mega-menu .vertical-menu-list").eq(0).addClass("show")
+});
+});
+</script>
+</body>
+</html>
